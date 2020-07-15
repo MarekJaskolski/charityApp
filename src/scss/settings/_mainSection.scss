@@ -1,0 +1,189 @@
+//HomeHeader
+.link {
+  text-decoration: none;
+  color: black;
+}
+.header {
+  height: 100vh;
+}
+.header-picture {
+  background-image: url(../../assets/Home-Hero-Image.jpg);
+  background-size: cover;
+  background-position: right;
+}
+.header-section {
+  flex-direction: column;
+}
+.login {
+  justify-content: flex-end;
+
+  p {
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    border: 2px solid white;
+    &:hover {
+      border: 2px solid $happyYellow-color;
+      cursor: pointer;
+    }
+  }
+}
+nav {
+  ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    li {
+      margin-left: 30px;
+      padding: 10px;
+      font-size: 15px;
+      text-align: center;
+      border: 2px solid white;
+      &:hover {
+        border: 2px solid $darkGrey-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.main-header {
+  margin-top: 150px;
+  flex-direction: column;
+  align-items: center;
+  p {
+    margin: 0;
+    padding: 10px;
+    font-size: 25px;
+  }
+}
+.buttons-header {
+  margin-top: 20px;
+  justify-content: center;
+
+  button {
+    margin: 20px;
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid $darkGrey-color;
+    font-size: 25px;
+    font-weight: 200;
+  }
+}
+// HomeThreeColumns
+.info-columns {
+  height: 30vh;
+  background-color: $happyYellow-color;
+}
+.info-box {
+  padding: 40px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  h2 {
+    font-size: 50px;
+    font-weight: 200;
+    margin: 0;
+    padding: 15px;
+  }
+  p {
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+//HomeInfo
+.step-box {
+  flex-direction: column;
+  align-items: center;
+}
+.step-columns {
+  justify-content: center;
+  background-color: $lightGrey-color;
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.what-to-do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  padding: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  div {
+    border-bottom: 2px solid $darkGrey-color;
+    width: 80%;
+  }
+  p {
+    text-align: center;
+  }
+}
+.btn {
+  margin: 20px;
+  width: 200px !important;
+  height: 100px;
+  background-color: transparent;
+  border: 1px solid $darkGrey-color;
+  font-size: 25px;
+  font-weight: 200;
+}
+//AboutUs
+
+.picture-about {
+  background-image: url(../../assets/People.jpg);
+  background-size: cover;
+}
+.about-us-section {
+  height: 50vh;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 2px solid $darkGrey-color;
+}
+.about-us-section-left {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+//Propagation
+.column {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.organization {
+  align-items: center;
+  justify-content: center;
+  p {
+    padding: 30px;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    cursor: pointer;
+  }
+}
+.border {
+  border: 2px solid $darkGrey-color;
+}
+.border-white {
+  border: 2px solid white;
+}
+.line {
+  border-bottom: 2px solid $darkGrey-color;
+}

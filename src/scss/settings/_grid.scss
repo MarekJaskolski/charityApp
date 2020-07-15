@@ -1,0 +1,21 @@
+$numberOfColumns: 12;
+$singleColWidth: 100% / $numberOfColumns;
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  .row {
+    display: flex;
+    & [class*="col-"] {
+      width: $singleColWidth;
+      // border: 1px solid black;
+      // gutters
+      padding: 10 px;
+    }
+    @for $n from 1 through $numberOfColumns {
+      & .col-#{$n} {
+        width: $singleColWidth * $n;
+      }
+    }
+  }
+}
