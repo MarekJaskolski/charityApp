@@ -10,8 +10,10 @@ export default function HomeInfo() {
   return (
     <div className="container">
       <div id="info-section" className="row col-12 step-box">
-        <h1>Wystarczą 4 proste kroki</h1>
-        <img src={Decoration}></img>
+        <div className="row col-12 step-box box-a">
+          <h1>Wystarczą 4 proste kroki</h1>
+          <img src={Decoration}></img>
+        </div>
         <div className=" col-12 row step-columns">
           <div className="col-2 what-to-do">
             <img src={Icon1}></img>

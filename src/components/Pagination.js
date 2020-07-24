@@ -9,13 +9,14 @@ console.log(data.fundations);
 
 export default function Pagination() {
   const [page, setPage] = useState("NonGovernment");
-  const chandleFundation = () => {
+
+  const handleFundation = () => {
     setPage("Fundation");
   };
-  const chandleNonGovernment = () => {
+  const handleNonGovernment = () => {
     setPage("NonGovernment");
   };
-  const chandleLocal = () => {
+  const handleLocal = () => {
     setPage("Local");
   };
 
@@ -23,39 +24,34 @@ export default function Pagination() {
     return (
       <>
         <Fundation
-          onHandle1={chandleFundation}
-          onHandle2={chandleNonGovernment}
-          onHandle3={chandleLocal}
+          onHandle1={handleFundation}
+          onHandle2={handleNonGovernment}
+          onHandle3={handleLocal}
         ></Fundation>
-        {data.fundations.map((item, index) => (
-          <OrganizationsList key={index} item={item} />
-        ))}
+
+        <OrganizationsList data={data.fundations} />
       </>
     );
   } else if (page === "NonGovernment") {
     return (
       <>
         <NonGovernment
-          onHandle1={chandleFundation}
-          onHandle2={chandleNonGovernment}
-          onHandle3={chandleLocal}
+          onHandle1={handleFundation}
+          onHandle2={handleNonGovernment}
+          onHandle3={handleLocal}
         ></NonGovernment>
-        {data.nonGovernment.map((item, index) => (
-          <OrganizationsList key={index} item={item} />
-        ))}
+        <OrganizationsList data={data.nonGovernment} />
       </>
     );
   } else if (page === "Local") {
     return (
       <>
         <Local
-          onHandle1={chandleFundation}
-          onHandle2={chandleNonGovernment}
-          onHandle3={chandleLocal}
+          onHandle1={handleFundation}
+          onHandle2={handleNonGovernment}
+          onHandle3={handleLocal}
         ></Local>
-        {data.local.map((item, index) => (
-          <OrganizationsList key={index} item={item} />
-        ))}
+        <OrganizationsList data={data.local} />
       </>
     );
   }

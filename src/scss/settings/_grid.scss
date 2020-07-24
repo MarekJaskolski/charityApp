@@ -2,7 +2,7 @@ $numberOfColumns: 12;
 $singleColWidth: 100% / $numberOfColumns;
 
 .container {
-  max-width: 1400px;
+  max-width: 100%;
   margin: 0 auto;
   .row {
     display: flex;
